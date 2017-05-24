@@ -1,0 +1,15 @@
+1. Use of bbcode: [spoiler]{TEXT}[/spoiler]
+
+2. HTML:
+
+<blockquote>
+ <div class="quoteinteraccion">
+   <cite class="cita">
+     <i class="icon-spoiler abatir"></i>
+      <p class="p-god p-show"></p>
+   </cite>
+  <div class="show show-content"><br />{TEXT}</div>
+ </div>
+</blockquote>
+
+3. HELP: [spoiler]Spoiler text here![/spoiler]

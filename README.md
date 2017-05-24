@@ -1,4 +1,6 @@
 # phpBB Modern Spoiler BBCode
-## Install
+## Screenshots
 
-1.Go to the 'ACP' <code>phpbb3 > messages > bbcode</code>.
+
+## Install
+1. Go to the `ACP > messages > bbcode`.

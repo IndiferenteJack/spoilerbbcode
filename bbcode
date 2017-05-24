@@ -1,0 +1,89 @@
+1. Use of bbcode: [spoiler]{TEXT}[/spoiler]
+
+2. HTML:
+<head>
+<style>
+.content blockquote {
+    border-width: 1px 1px 1px 2px;
+    border-color: #ffffff #e8e8e8 #dbdbdb #666666;
+    border-style: solid;
+    position: relative;
+    background: #fbfbfb;
+    clear: both;
+    margin: 4px 0 0px 0px;
+    padding: 0 0 0 0;
+}
+cite {
+    border: 1px solid #d8d8d8;
+    background: #e5e5e5;
+    padding: 6px 34px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: -1px;
+    font-size: 13px;
+    cursor: pointer;
+    display: block;
+}
+i.icon-spoiler {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    display: inline-block;
+    font-style: normal;
+}
+i.icon-spoiler.expandir:before {
+    content: "\f13a";
+    color: #bdbdbd;
+}
+i.icon-spoiler.abatir:before {
+    content: "\f138";
+    color: black;
+}
+.p-god {
+    margin-top: 1px;
+    margin-bottom: 0;
+}
+.p-show:before {
+    content: "Show hide content";
+}
+.p-hide:before {
+    content: "Hide content";
+}
+.show {
+    padding: 2px 8px 10px 10px;
+    max-height: 440px;
+    overflow: auto;
+}
+.show-content {
+    display: none;
+}
+<style>
+</head>
+<script>
+window.onload = function (){
+	$(document).ready(function() {
+	    $(".cita").click(function() {
+			$(this).next().toggleClass( "show-content", "hide-content" );
+			$(this).find(".icon-spoiler").toggleClass("abatir expandir");
+      $(this).find(".p-god").toggleClass("p-show p-hide");
+      });    
+	});
+}
+</script>
+	 
+<blockquote>
+ <div class="quoteinteraccion">
+   <cite class="cita">
+     <i class="icon-spoiler abatir"></i>
+      <p class="p-god p-show"></p>
+   </cite>
+  <div class="show show-content"><br />{TEXT}</div>
+ </div>
+</blockquote>
+
+
+3. HELP: [spoiler]Spoiler text here![/spoiler]

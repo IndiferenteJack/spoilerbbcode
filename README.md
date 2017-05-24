@@ -1,0 +1,2 @@
+# spoilerbbcode
+phpBB Spoiler BBcode
